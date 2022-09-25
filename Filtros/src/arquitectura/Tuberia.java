@@ -4,7 +4,7 @@ package arquitectura;
 public class Tuberia {
     
     private Filtro inicio;
-    private static Filtro ultimo;
+    private Filtro ultimo;
     
     public Object ejecutar(Object entrada) {
         return this.inicio.ejecutar(entrada);
