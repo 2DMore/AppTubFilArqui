@@ -13,7 +13,11 @@ public class FiltroPrueba1 extends Filtro{
 
     @Override
     protected Object procesar(Object entrada) {
-        String retornar = "Prueba de filtro: "+(String)entrada;
+        String[] args = (String[])entrada;
+        String retornar="|";
+        for(String s: args){
+            retornar+=s+"|";
+        }
         return retornar;
     }
     

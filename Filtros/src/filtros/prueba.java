@@ -20,7 +20,7 @@ public class prueba {
         tuberia.registrar(new FiltroPrueba1());
         tuberia.registrar(new FiltroPrueba2());
         
-        tuberia.ejecutar("Como es que llegamos aqui");
+        tuberia.ejecutar(args);
     }
     
 }
