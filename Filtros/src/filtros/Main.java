@@ -11,6 +11,12 @@ public class Main {
         tuberia.registrar(new NormalizarCadena());
         tuberia.registrar(new QuitarEspacios());
         tuberia.registrar(new separarPalabras());
+        tuberia.registrar(new QuitarPV());
+        tuberia.registrar(new ArrayToString());
+        tuberia.registrar(new separarPalabras());
+        tuberia.registrar(new GenerarVariaciones());
+        tuberia.registrar(new imprimirArrayList());
+        tuberia.ejecutar(args);
 
 
     }
