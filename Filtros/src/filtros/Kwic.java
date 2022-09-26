@@ -1,6 +1,6 @@
 package filtros;
 
 public class Kwic {
-    public static String archivoPV;
+    public static String[] palabrasVacias;
     
 }
