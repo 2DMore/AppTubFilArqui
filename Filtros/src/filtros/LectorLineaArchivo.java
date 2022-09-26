@@ -24,9 +24,8 @@ public class LectorLineaArchivo extends Filtro {
     private static String obtenerContenido(String ruta) throws FileNotFoundException{
         String linea=null;
         File archivo = new File(ruta);
-        Scanner  lector;
-
-        lector = new Scanner(archivo);
+        
+        Scanner  lector = new Scanner(archivo);
         if(lector.hasNext()){
             linea = lector.nextLine();   
         }

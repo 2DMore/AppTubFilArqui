@@ -37,7 +37,13 @@ public class GenerarVariaciones extends Filtro{
 
     private boolean ChecarFraseRepetida(String[] rotacion){
         String[] p= devolver.get(0);
-        return p.equals(rotacion);  
+        String original="";
+        String actual="";
+        for(int i=0; i<p.length;i++){
+            original+=p[0];
+            actual+=rotacion[0];
+        }
+        return original.equals(actual);  
     }
     
 }

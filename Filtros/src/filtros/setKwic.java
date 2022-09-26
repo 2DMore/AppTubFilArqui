@@ -15,7 +15,7 @@ public class setKwic extends Filtro{
         try {
             contenido = obtenerContenido(args[1]);
         } catch (FileNotFoundException e) {
-           System.out.println("Archivo no encontrado: " +args[1]);
+           System.out.println("Archivo no encontrado: "+e.getMessage());
            System.exit(0);
         }
         Kwic.palabrasVacias=contenido;

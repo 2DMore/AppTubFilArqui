@@ -10,7 +10,9 @@ public class QuitarPV extends Filtro{
     protected Object procesar(Object entrada) {
         String[] palabras  =(String[])entrada;
         for(int i=0; i< palabras.length;i++){
-            if(Arrays.binarySearch(Kwic.palabrasVacias, palabras[i])<0){
+            int r=Arrays.binarySearch(Kwic.palabrasVacias, palabras[i]);
+            if(r>=0){
+                
                 palabras[i]="";
             }
         }
