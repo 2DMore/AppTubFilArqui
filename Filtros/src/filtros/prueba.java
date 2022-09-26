@@ -16,11 +16,12 @@ public class prueba {
      */
     public static void main(String[] args) {
         Tuberia tuberia = new Tuberia();
-        
-        tuberia.registrar(new FiltroPrueba1());
+
+        tuberia.registrar(new NormalizarCadena());
         tuberia.registrar(new FiltroPrueba2());
         
-        tuberia.ejecutar(args);
+        
+        tuberia.ejecutar(" à   è È Ú ñ     Ñ  ");
     }
     
 }
