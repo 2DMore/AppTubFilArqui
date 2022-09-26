@@ -1,2 +1,1 @@
-java -jar Filtros.jar src/filtros/texto.txt src/filtros/palabras.txt
 java -jar kwic.jar texto.txt palabras.txt
